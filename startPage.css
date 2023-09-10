@@ -13,4 +13,14 @@ h1{
 
 h2{
     font-size: 50px;
+    -webkit-text-stroke: black 1px;
+    color: whitesmoke;
+}
+
+button{
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+
 }
