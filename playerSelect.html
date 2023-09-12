@@ -11,18 +11,30 @@
 <body>
     <div class="gameTitle">
         TRIVIA-O-WAR
+        <p>Welcome players to Trivia-O-War! Get your mental weapons ready as you take each other on in intellectual battle!</p>
     </div>
 
     <div class="playerOne">
-        Player one enter "text box goes here"
+        <label for="playerOne"> <!--add character image here---> Player One: </label> <input type="text" id="playerOne" name="player">
     </div>
 
     <div class="playerTwo">
-        Player two enter "text box goes here"
+        <label for="playerTwo"> <!-- add character image here--->Player Two: </label> <input type="text" id="playerTwo" name="player">
     </div>
+    
+    <div id="howToPlay">
+        <div id="howToPlay-textbox">
+            <h1>How To Play</h1>
+            <p>Players take turns answering trivia questions, racking up points as questions are answered correctly!</p>
+            <p>The player set to start the game off is selected at random</p>
+            <p>Each question correctly answered adds 10 points to your score and the turn is passed to your opponent!</p>
+            <p>If any question is answered incorrectly, 5 points are deducted from your score and your turn is passed to your opponent!</p>
+            <p>The first player to reach a score of 100 points is declared the winner!</p>
+            <p>Good luck and enjoy the game!</p>
 
-    <div class="howTo">
-        Description of how to play goes here, needs to be hidden on page start and pops up on click
+            <a id="close" href="#">Back To Game</a>
+        </div>
     </div>
+    <button id="howTo">How To Play</button>
 </body>
 </html>
