@@ -1,0 +1,17 @@
+#howToPlay{
+    display: none;
+    position: relative;
+    margin-block: 20px;
+    margin-inline: 400px;
+    padding: 5px;
+    border-style: outset;
+    border: solid 2px rgba(69, 87, 101, 0.323);
+    z-index: 1;
+}
+#howToPlay-textbox{
+    border: solid 5px rgba(69, 87, 101, 0.323);
+    background-color: #3a909a2b;
+}
+#textboxTitle{
+    text-align: center;
+}
