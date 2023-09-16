@@ -1,0 +1,47 @@
+.questionsModal{
+    /* display: none; */
+    border: solid 5px black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translate(-75%,-100%);
+    margin: 100px 100px;
+    padding: 15px;
+}
+.qOneModal{
+    /* display: none; */
+    border: solid 2px black;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.qTwoModal{
+    display: none;
+}
+.qThreeModal{
+    display: none;
+}
+.qFourModal{
+    display: none;
+}
+.qFiveModal{
+    display: none;
+}
+.qSixModal{
+    display: none;
+}
+.qSevenModal{
+    display: none;
+}
+.qEightModal{
+    display: none;
+}
+.qNineModal{
+    display: none;
+}
+.qTenModal{
+    display: none;
+}

@@ -4,8 +4,6 @@ let playerTwo = document.querySelector("#playerTwo");
 
 let playerArray = [playerOne, playerTwo];
 
-let randomPlayer = playerArray[Math.floor(Math.random() * playerArray.length)];
-
 let selectPlayer = document.querySelector("#selectPlayer");
 
 const playerOneButton = document.querySelector("#playerOneEnter");
@@ -20,13 +18,13 @@ const closeBackToGame = document.querySelector("#close");
 
 const startGame = document.querySelector("#startGame"); 
 
-playerOneButton.addEventListener("click", () =>{
-    playerOne.innerHTML = playerOne.value
-});
+// playerOneButton.addEventListener("click", () =>{
+//     playerOne.innerHTML = playerOne.value
+// });
 
-playerTwoButton.addEventListener("click", () =>{
-    playerTwo.innerHTML = playerTwo.value
-});
+// playerTwoButton.addEventListener("click", () =>{
+//     playerTwo.innerHTML = playerTwo.value
+// });
 
 openHowToButton.addEventListener("click", () =>{
     howToPlayModal.style.display = "block"
@@ -41,6 +39,7 @@ startGame.addEventListener("click", () =>{
 }); 
 
 selectPlayer.addEventListener("click", () =>{
+    let randomPlayer = playerArray[Math.floor(Math.random() * playerArray.length)];
     let playerSelected = document.querySelector(".playerSelected"); 
-    playerSelected.innerHTML = randomPlayer
+    playerSelected.innerHTML = randomPlayer.value
 }); 
