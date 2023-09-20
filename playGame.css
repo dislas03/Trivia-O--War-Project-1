@@ -1,5 +1,31 @@
+.titleCard{
+    text-align: center;
+    font-size: 75px;
+} 
+
+.playerImages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.playerNames{
+    display: flex;
+    justify-content: space-between;
+}
+
+.playersScore{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+
+.button{
+    display: block;
+    text-align: center;
+}
+
 .questionsModal{
-    /* display: none; */
+    display: none;
     border: solid 5px black;
     position: fixed;
     top: 50%;
@@ -10,7 +36,7 @@
     padding: 15px;
 }
 .qOneModal{
-    /* display: none; */
+    display: none;
     border: solid 2px black;
     position: relative;
     margin: 10px 10px;

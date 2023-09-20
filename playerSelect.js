@@ -43,3 +43,5 @@ selectPlayer.addEventListener("click", () =>{
     let playerSelected = document.querySelector(".playerSelected"); 
     playerSelected.innerHTML = randomPlayer.value
 }); 
+
+// export{ playerOne, playerTwo };
