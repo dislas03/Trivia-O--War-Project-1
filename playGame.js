@@ -31,9 +31,19 @@ const questionNine = document.querySelector(".qNineModal");
 
 const questionTen = document.querySelector(".qTenModal"); 
 
+let correctAnswer = document.querySelector(".correctAnswerModal");
+
+let incorrectAnswer = document.querySelector(".incorrectAnswerModal");
+
 let playerOneName = document.querySelector(".playerOneName");
 
-let playerTwoName = document.querySelector(".playerTwoName");
+let playerTwoName = document.querySelector(".playerTwoName"); 
+
+// let playerOneScore = 0 
+
+// let playerTwoScore = 0 
+
+// document.querySelector("")
 
 // playerOneName.innerHTML = playerOneName
 
@@ -47,19 +57,41 @@ let playerTwoName = document.querySelector(".playerTwoName");
 
 let questionsArray = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine, questionTen];
 
-let playerOneScore = document.querySelector(".playerOneScore");
+// let playerOneScore = document.querySelector(".playerOneScore");
 
-let playerTwoScore = document.querySelector(".playerTwoScore");
+// let playerTwoScore = document.querySelector(".playerTwoScore");
 
 class CorrectAnswer {
     constructor(name){
-        this.name = document.querySelector(name); //select the button with the correct answer
+        name = document.querySelector(name); //select the button with the correct answer
     }
     eventListener(){
-        this.name.addEventListener("click", () =>{  
+        this.name.addEventListener("click", () =>{ 
+            correctAnswer.style.display = "block"
         })
     }
 }
+//list of all the correct answers within HTML 
+let modalOneAnswer = new CorrectAnswer (".aTwoModalOne");
+modalOneAnswer.eventListener(); 
+let modalTwoAnswer = new CorrectAnswer (".aOneModalTwo");
+modalTwoAnswer.eventListener 
+let modalThreeAnswer = new CorrectAnswer (".ThreeModalThree");
+modalThreeAnswer.eventListener();
+let modalFourAnswer = new CorrectAnswer (".aOneModalFour");
+modalFourAnswer.eventListener();
+let modalFiveAnswer = new CorrectAnswer (".aOneModalFive");
+modalFiveAnswer.eventListener();
+let modalSixAnswer = new CorrectAnswer (".aFourModalSix");
+modalSixAnswer.eventListener();
+let modalSevenAnswer = new CorrectAnswer (".aFourModalSeven");
+modalSevenAnswer.eventListener();
+let modalEightAnswer = new CorrectAnswer (".aTwoModalEight");
+modalEightAnswer.eventListener();
+let modalNineAnswer = new CorrectAnswer (".aTwoModalNine");
+modalNineAnswer.eventListener();
+let modalTenAnswer = new CorrectAnswer (".aThreeModalTen");
+modalTenAnswer.eventListener();
 
 
 takeTurnButton.addEventListener("click", () =>{

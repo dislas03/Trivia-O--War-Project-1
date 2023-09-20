@@ -70,4 +70,10 @@
 }
 .qTenModal{
     display: none;
+} 
+.correctAnswerModal{
+    display: none;
+}
+.incorrectAnswerModal{
+    display: none;
 }
