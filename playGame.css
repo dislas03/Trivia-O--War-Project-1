@@ -79,4 +79,7 @@
 }
 .incorrectAnswerModal{
     display: none;
+} 
+.clearLocalStorage{
+    display: none;
 }
