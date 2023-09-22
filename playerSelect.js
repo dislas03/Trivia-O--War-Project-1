@@ -1,14 +1,12 @@
 let playerOne = document.querySelector("#playerOne");
 
-let playerTwo = document.querySelector("#playerTwo");
+// let playerTwo = document.querySelector("#playerTwo");
 
-let playerArray = [playerOne, playerTwo];
+let playerArray = [playerOne];
 
-let selectPlayer = document.querySelector("#selectPlayer");
+let selectPlayer = document.querySelector("#namePlayer");
 
 const playerOneButton = document.querySelector("#playerOneEnter");
-
-const playerTwoButton = document.querySelector("#playerTwoEnter");
 
 const howToPlayModal = document.querySelector("#howToPlay");
 
@@ -17,14 +15,6 @@ const openHowToButton = document.querySelector("#howTo");
 const closeBackToGame = document.querySelector("#close");
 
 const startGame = document.querySelector("#startGame"); 
-
-// playerOneButton.addEventListener("click", () =>{
-//     playerOne.innerHTML = playerOne.value
-// });
-
-// playerTwoButton.addEventListener("click", () =>{
-//     playerTwo.innerHTML = playerTwo.value
-// });
 
 openHowToButton.addEventListener("click", () =>{
     howToPlayModal.style.display = "block"
@@ -36,12 +26,15 @@ closeBackToGame.addEventListener("click", () =>{
 
 startGame.addEventListener("click", () =>{
     window.location.href = "playGame.html";
+    localStorage.setItem("playerOne", playerOne.value);
+    // localStorage.setItem("playerTwo", playerTwo.value);
+    // localStorage.setItem("playerArray", playerArray.value);
 }); 
 
 selectPlayer.addEventListener("click", () =>{
     let randomPlayer = playerArray[Math.floor(Math.random() * playerArray.length)];
-    let playerSelected = document.querySelector(".playerSelected"); 
+    let playerSelected = document.querySelector(".nameSelected");
     playerSelected.innerHTML = randomPlayer.value
+    localStorage.setItem("namePlayer", playerSelected.innerHTML);
 }); 
 
-// export{ playerOne, playerTwo };

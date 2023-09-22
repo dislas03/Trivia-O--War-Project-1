@@ -12,6 +12,9 @@
     display: flex;
     justify-content: space-between;
 }
+#playerStart{
+    display: block;
+}
 
 .playersScore{
     display: flex;
