@@ -29,7 +29,6 @@ body{
 .playerOneText{
     font-size: 30px;
     color: whitesmoke;
-    /* -webkit-text-stroke: black 1px; */
 }
 #playerOne{
     font-size: 26px;

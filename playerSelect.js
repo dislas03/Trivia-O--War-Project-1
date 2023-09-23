@@ -1,7 +1,5 @@
 let playerOne = document.querySelector("#playerOne");
 
-// let playerTwo = document.querySelector("#playerTwo");
-
 let playerArray = [playerOne];
 
 let selectPlayer = document.querySelector("#namePlayer");
@@ -36,9 +34,7 @@ openStartGame.addEventListener("click", () => {
 startGame.addEventListener("click", () =>{
     window.location.href = "playGame.html";
     localStorage.setItem("playerOne", playerOne.value);
-    // localStorage.setItem("playerTwo", playerTwo.value);
-    // localStorage.setItem("playerArray", playerArray.value);
-}); 
+ }); 
 
 selectPlayer.addEventListener("click", () =>{
     let randomPlayer = playerArray[Math.floor(Math.random() * playerArray.length)];

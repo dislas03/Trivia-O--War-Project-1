@@ -5,10 +5,6 @@ const playerTwoName = document.querySelector(".playerTwoName");
 
 playerOneName.innerHTML = localStorage.getItem("playerOne");
 
-// playerTwoName.innerHTML = localStorage.getItem("playerTwo");
-
-// playerSelected.innerHTML = localStorage.getItem("namePlayer");
-
 const buttonClass = document.querySelector(".button")
 
 const takeTurnButton = document.querySelector("#takeTurn");
@@ -36,8 +32,6 @@ const questionEight = document.querySelector(".qEightModal");
 const questionNine = document.querySelector(".qNineModal");
 
 const questionTen = document.querySelector(".qTenModal"); 
-
-// const clearStorageModal = document.querySelector("#clearLocalStorage");
 
 const clearStorage = document.querySelector("#clearLocalStorage");
 
@@ -74,8 +68,6 @@ let nextTurn = document.querySelectorAll(".nextTurn")
 let playerOneScore = document.querySelector(".playerOneScore");
 
 let playerScore = 0;
-
-// let playerTwoScore = 0 
 
 let questionsArray = [
     {
@@ -133,12 +125,6 @@ let questionsArray = [
 ];
 console.log(questionsArray);
 
-// if (playerSelected.innerHTML === playerOneName.innerHTML){
-//     console.log(playerOneName)
-// } else{
-//     console.log(playerTwoName)
-// }
-
 let scoreIncrement = (amt) => {
     playerScore += amt;
     playerOneScore.innerHTML = playerScore;
@@ -156,7 +142,6 @@ takeTurn = takeTurnButton.addEventListener("click", () => {
     buttonClass.style.display = "none"
     let randomQuestion = questionsArray[Math.floor(Math.random() * questionsArray.length)];
     randomQuestion.question.style.display = "block"
-    // playerStart.style.display = "none"
 });
 
 nextTurn.forEach(nextTurn => {
@@ -170,17 +155,6 @@ nextTurn.forEach(nextTurn => {
         randomQuestion.question.style.display = "block"
     })
 })
-// const correctTurn = correctNextTurn.addEventListener("click", () => {
-//     questionsModal.style.display = "block"
-//     let randomQuestion = questionsArray[Math.floor(Math.random() * questionsArray.length)];
-//         randomQuestion.question.style.dipslay = "block"
-// })
-
-// const incorrectTurn = incorrectNextTurn.addEventListener("click", () => {
-//     questionsModal.style.display = "block"
-//     let randomQuestion = questionsArray[Math.floor(Math.random() * questionsArray.length)];
-//         randomQuestion.question.style.dipslay = "block"
-// })
 
 selectedAnswerOne.forEach(selectAnswerOne => {
     selectAnswerOne.addEventListener("click", () => {
