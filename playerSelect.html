@@ -9,14 +9,17 @@
 </head>
 <body>
     <div class="gameTitle">
-        TRIVIA-O-WAR
-        <p>Welcome players to Trivia-O-War! Get your mental weapons ready as you take each other on in intellectual battle!</p>
+       <h1>TRIVIA-O-WAR</h1>
+        <p class="welcomeText">Welcome players to Trivia-O-War! Get your mental weapons ready as you take on an intellectual battle!</p>
     </div>
+<div class="flexBox">
+    <img class="idleSpartan" src="IdleSpartan.gif" alt="idleSpartan"> 
 
     <div class="players">
-        <label for="playerOne"> <!--add character image here---> Player One: </label> <input type="text" id="playerOne" name="player"> 
+        <label class="playerOneText" for="playerOne">Player One: </label> <input type="text" id="playerOne" name="player"><button id="namePlayer">Enter Player</button>  
         <!-- <label for="playerTwo"> add character image here-Player Two: </label> <input type="text" id="playerTwo" name="player"> -->
     </div>
+</div>
     
     <div id="howToPlay">
         <div id="howToPlay-textbox">
@@ -28,13 +31,12 @@
             <a id="close" href="#">Back To Game</a>
         </div>
     </div>
-    <button id="howTo">How To Play</button>
+    <div class="howToButtonModal">
+        <button id="howTo">How To Play</button>
+    </div>
     <div class="startGame"> 
+        <p class="nameSelected">....</p>
         <button id="startGame">Start!</button>
-        <p>
-            <button id="namePlayer">Player Name</button> 
-            <p class="nameSelected">....</p>
-        </p>
     </div>
 </body>
 </html>

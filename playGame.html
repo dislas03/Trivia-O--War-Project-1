@@ -11,15 +11,12 @@
     <div>
         <h1 class="titleCard">Trivia-O-War</h1>
     </div>
+    <img class="idleSpartan" src="IdleSpartan.gif" alt="idleSpartan">
+</div>
 
     <div class="playerNames">
         <p class="playerOneName">Name</p> 
         <!-- <p class="playerTwoName">Name</p> -->
-    </div>
-
-    <div class="playerImages">
-        <img href="">
-        <img href="">
     </div>
     
     <div class="playersScore">
@@ -127,20 +124,25 @@
 
     <div class="correctAnswerModal">
         <h1>Correct!
-            <button class="nextTurn">Next Turn</button>
+            <div class="nextTurnButton"><button class="nextTurn">Next Turn</button></div>
         </h1>
     </div>
 
     <div class="incorrectAnswerModal">
         <h1>Incorrect!
-            <button class="nextTurn">Next Turn</button>
+            <div class="nextTurnButton"><button class="nextTurn">Next Turn</button></div>
         </h1>
     </div>
 
-    <div class="clearLocalStorage">
-        <h1>You Won!</h1>
-        <button id="clear">Play Again?</button>
+    <div>
+        <h1 class="winCondition">You Won!</h1>
     </div>
+
+    <div>
+        <h1 class="loseCondition">You Lost!</h1>
+    </div>
+    
+    <button id="clearLocalStorage">Play Again?</button>
 
 
 </body>

@@ -1,20 +1,7 @@
-//add event listener to open questions modal, should be dedicated to open button "take turn" 
-//inside modal should be random questions that player is presented 
-//each question has 4 listed answers each having their own event listner to choose from, correct answer shows diplay "correct" wrong answer shows display "incorrect" 
-//correct answer adds 2 points to score, incorrect answer removes 1 point from score 
-//last lines of code should be computer waiting for first player to reach a certain score, in this case 10 points 
-//take turn button opens one of the ten questions randomly 
-// import { playerOne as playerOneName } from "./playerSelect.js";
 
 const playerOneName = document.querySelector(".playerOneName");
 
 const playerTwoName = document.querySelector(".playerTwoName");
-
-// const playerSelected = document.querySelector(".startingPlayer");
-
-// let playerArray = localStorage.getItem("playerArray");
-
-// console.log(playerArray)
 
 playerOneName.innerHTML = localStorage.getItem("playerOne");
 
@@ -50,21 +37,21 @@ const questionNine = document.querySelector(".qNineModal");
 
 const questionTen = document.querySelector(".qTenModal"); 
 
-const clearStorageModal = document.querySelector(".clearLocalStorage");
+// const clearStorageModal = document.querySelector("#clearLocalStorage");
 
-const clearStorage = document.querySelector("#clear");
+const clearStorage = document.querySelector("#clearLocalStorage");
+
+const winCondition = document.querySelector(".winCondition")
+
+const loseCondition = document.querySelector(".loseCondition")
 
 let selectedAnswerOne = document.querySelectorAll(".selectAnswerOne");
 
-
 let selectedAnswerTwo = document.querySelectorAll(".selectAnswerTwo");
-
 
 let selectedAnswerThree = document.querySelectorAll(".selectAnswerThree");
 
-
 let selectedAnswerFour = document.querySelectorAll(".selectAnswerFour");
-
 
 let selectedAnswerFive = document.querySelectorAll(".selectAnswerFive");
 
@@ -209,7 +196,14 @@ selectedAnswerOne.forEach(selectAnswerOne => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[0].question.style.display === "block"){
+            questionsArray[0].question.style.display = "none"
         }
     })
 })
@@ -229,7 +223,14 @@ selectedAnswerTwo.forEach(selectAnswerTwo => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[1].question.style.display === "block"){
+            questionsArray[1].question.style.display = "none"
         }
     })
 })
@@ -249,7 +250,14 @@ selectedAnswerThree.forEach(selectAnswerThree => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[2].question.style.display === "block"){
+            questionsArray[2].question.style.display = "none"
         }
     })
 })
@@ -269,7 +277,15 @@ selectedAnswerFour.forEach(selectAnswerFour => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+
+        if (questionsArray[3].question.style.display === "block"){
+            questionsArray[3].question.style.display = "none"
         }
     })
 })
@@ -289,7 +305,14 @@ selectedAnswerFive.forEach(selectAnswerFive => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[4].question.style.display === "block"){
+            questionsArray[4].question.style.display = "none"
         }
     })
 })
@@ -309,7 +332,14 @@ selectedAnswerSix.forEach(selectAnswerSix => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[5].question.style.display === "block"){
+            questionsArray[5].question.style.display = "none"
         }
     })
 })
@@ -330,7 +360,14 @@ selectedAnswerSeven.forEach(selectAnswerSeven => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[6].question.style.display === "block"){
+            questionsArray[6].question.style.display = "none"
         }
     })
 })
@@ -350,7 +387,14 @@ selectedAnswerEight.forEach(selectAnswerEight => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[7].question.style.display === "block"){
+            questionsArray[7].question.style.display = "none"
         }
     })
 })
@@ -370,7 +414,14 @@ selectedAnswerNine.forEach(selectAnswerNine => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        }
+        if (questionsArray[8].question.style.display === "block"){
+            questionsArray[8].question.style.display = "none"
         }
     })
 })
@@ -390,7 +441,14 @@ selectedAnswerTen.forEach(selectAnswerTen => {
             }
         }
         if (playerScore >= 80){
-            clearStorageModal.style.display = "block"
+            clearStorage.style.display = "block"
+            winCondition.style.display = "block"
+        } else if(playerScore < 0){
+            clearStorage.style.display = "block"
+            loseCondition.style.display = "block"
+        } 
+        if (questionsArray[9].question.style.display === "block"){
+            questionsArray[9].question.style.display = "none"
         }
     })
 })

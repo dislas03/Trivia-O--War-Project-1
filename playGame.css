@@ -1,16 +1,26 @@
+body{
+    background-image: url(fall-roman-empire.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .titleCard{
     text-align: center;
     font-size: 75px;
+    color: whitesmoke;
+    -webkit-text-stroke: black 1px;
 } 
 
-.playerImages{
-    display: flex;
-    justify-content: space-between;
+.idleSpartan{
+    width: 120px;
+    height: auto;
 }
 
 .playerNames{
     display: flex;
     justify-content: space-between;
+    font-size: 35px;
+    color: whitesmoke;
+    margin-left: 18px;
 }
 #playerStart{
     display: block;
@@ -19,7 +29,10 @@
 .playersScore{
     display: flex;
     justify-content: space-between;
-    font-size: 35px;
+    font-size: 40px;
+    color: whitesmoke;
+    margin-top: -35px;
+    margin-left: 20px;
 }
 
 .button{
@@ -27,9 +40,19 @@
     text-align: center;
 }
 
+.nextTurnButton{
+    text-align: center;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: initial;
+}
 .questionsModal{
     display: none;
     border: solid 5px black;
+    background-color: #f5f5f5ab;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -41,6 +64,7 @@
 .qOneModal{
     display: none;
     border: solid 2px black;
+    background-color: #f5f5f529;
     position: relative;
     margin: 10px 10px;
     padding: 5px 5px;
@@ -49,37 +73,117 @@
 }
 .qTwoModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qThreeModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qFourModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qFiveModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qSixModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qSevenModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qEightModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qNineModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 .qTenModal{
     display: none;
+    border: solid 2px black;
+    background-color: #f5f5f529;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
 } 
 .correctAnswerModal{
     display: none;
+    font-size: 25px;
+    color: whitesmoke;
 }
 .incorrectAnswerModal{
     display: none;
+    font-size: 25px;
+    color: whitesmoke;
 } 
-.clearLocalStorage{
+
+.winCondition{
+    display: none;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.loseCondition{
+    display: none;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+#clearLocalStorage{
     display: none;
 }

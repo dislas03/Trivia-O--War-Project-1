@@ -1,3 +1,45 @@
+body{
+    background-image: url(fall-roman-empire.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gameTitle{
+    text-align: center;
+}
+.gameTitle h1{
+    font-size: 50px;
+    color: whitesmoke;
+    -webkit-text-stroke: black 1px;
+}
+.welcomeText{
+    font-size: 35px;
+    color: whitesmoke;
+    -webkit-text-stroke: black 75%;
+}
+.idleSpartan{
+    width: 200px;
+    height: auto;
+}
+#namePlayer{
+    height: 25px;
+}
+.players{
+    display: block;
+}
+.playerOneText{
+    font-size: 30px;
+    color: whitesmoke;
+    /* -webkit-text-stroke: black 1px; */
+}
+#playerOne{
+    font-size: 26px;
+    color: black;
+
+}
+.nameSelected{
+    font-size: 30px;
+    color: whitesmoke;
+}
 #howToPlay{
     display: none;
     position: relative;
@@ -5,13 +47,31 @@
     margin-inline: 400px;
     padding: 5px;
     border-style: outset;
-    border: solid 2px rgba(69, 87, 101, 0.323);
-    z-index: 1;
+    border: solid 2px rgba(0, 0, 0, 1);
+    z-index: 3;
+}
+.startGame{
+    display: none;
+    text-align: center;
+}
+.nameSelected{
+    font-size: 50px;
+    
 }
 #howToPlay-textbox{
-    border: solid 5px rgba(69, 87, 101, 0.323);
-    background-color: #3a909a2b;
+    border: solid 5px rgb(0, 0, 0);
+    border: solid 2px black;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: #f5f5f5ab;
 }
 #textboxTitle{
     text-align: center;
+}
+#howTo{
+    margin: 150px 1275px;
+    position: fixed;
 }
